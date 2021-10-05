@@ -7,7 +7,7 @@ La siguiente imagen muestra la creación de las claves, con los comandos indicad
 ![CapturaEjercicio1](./img/Captura1.png)
 
 Y a continuación la subida de la clave pública en GitHub:\
-![CapturaEjercicio2](./img/Captura2.png)\
+![CapturaEjercicio2](./img/Captura2.png)
 ![CapturaEjercicio7](./img/Captura6.png)
 
 ## Configuración correcta del nombre y correo electrónico para que aparezca en los commits.
