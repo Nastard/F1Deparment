@@ -1,0 +1,4 @@
+entidad:
+   - src/Circuito.py
+   - src/Constructor.py
+   - src/Piloto.py
