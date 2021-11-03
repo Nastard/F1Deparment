@@ -36,35 +36,35 @@ class Predictor:
 		self.model_pole = model
 
 	def test_race_prediction(self, driver, circuit): # test race
-		print(driver+" "+circuit+" "+str(self.model_race))
+		# print(driver+" "+circuit+" "+str(self.model_race))
 
 		prediction = 0
 		return prediction
 
 	def test_pole_prediction(self, driver, circuit):  # test pole
-		print(driver+" "+circuit+" "+str(self.model_pole))
+		# print(driver+" "+circuit+" "+str(self.model_pole))
 
 		prediction = 0
 		return prediction
 
-p = Predictor()
-print(p)
-print(p.get_df().head())
-p.set_df(pd.DataFrame(columns=[]))
-print(p.get_df())
-
-p.set_model_race(1)
-print(p.get_model_race())
-p.set_model_pole(2)
-print(p.get_model_pole())
-
-p.load_csv("./data/dataF1.csv")
-print(p.get_df().head())
-
-p.train_race_prediction()
-print(p.get_model_race())
-p.train_pole_prediction()
-print(p.get_model_pole())
-
-p.test_race_prediction("alonso", "catalunya")
-p.test_pole_prediction("sainz", "monza")
+# p = Predictor()
+# print(p)
+# print(p.get_df().head())
+# p.set_df(pd.DataFrame(columns=[]))
+# print(p.get_df())
+#
+# p.set_model_race(1)
+# print(p.get_model_race())
+# p.set_model_pole(2)
+# print(p.get_model_pole())
+#
+# p.load_csv("./data/dataF1.csv")
+# print(p.get_df().head())
+#
+# p.train_race_prediction()
+# print(p.get_model_race())
+# p.train_pole_prediction()
+# print(p.get_model_pole())
+#
+# p.test_race_prediction("alonso", "catalunya")
+# p.test_pole_prediction("sainz", "monza")
