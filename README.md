@@ -32,7 +32,7 @@ Se describen a continuación los Hitos donde cada uno de ellos implementará un 
 
 ## Entidades generadas.
 
-Dada las historias de usuario, se ha creado una clase principal denominada *Predictor*, sujetas a evolución según sean necesarios nuevos requisitos. El archivo [cc.yaml](./cc.yaml) contiene esta clase, necesaria para que el [Hito1](https://github.com/Nastard/F1Deparment/milestone/2) sea un producto mínimamente viable.
+Dada las historias de usuario, se ha creado una clase principal denominada *Predictor*, sujetas a evolución según sean necesarios nuevos requisitos futuros. El archivo [cc.yaml](./cc.yaml) contiene esta clase, necesaria para que el [Hito1](https://github.com/Nastard/F1Deparment/milestone/2) sea un producto mínimamente viable.
 
 
 ## Documentación adicional
