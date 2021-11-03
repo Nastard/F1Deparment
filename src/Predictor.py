@@ -1,6 +1,36 @@
-class Predictor:
-	def __init__(self):
-		d = 0
+import pandas as pd
 
-d = Predictor()
-print(d)
+class Predictor:
+	def __init__(self, df=pd.DataFrame(columns=[]), model_race=0, model_pole=0):
+		self.df = df
+		self.model_race = model_race
+		self.model_pole = model_pole
+
+	def get_df(self):
+		return self.df
+
+	def set_df(self, df):
+		self.df = df
+
+	def get_model_race(self):
+		return self.model_race
+
+	def set_model_race(self, model_race):
+		self.model_race = model_race
+
+	def get_model_pole(self):
+		return self.model_pole
+
+	def set_model_pole(self, model_pole):
+		self.model_pole = model_pole
+
+p = Predictor()
+print(p)
+print(p.get_df().head())
+p.set_df(pd.DataFrame(columns=[]))
+print(p.get_df())
+
+p.set_model_race(1)
+print(p.get_model_race())
+p.set_model_pole(2)
+print(p.get_model_pole())
