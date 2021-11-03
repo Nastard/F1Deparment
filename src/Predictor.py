@@ -24,6 +24,9 @@ class Predictor:
 	def set_model_pole(self, model_pole):
 		self.model_pole = model_pole
 
+	def load_csv(self, path):
+		self.df = pd.read_csv(path)
+
 p = Predictor()
 print(p)
 print(p.get_df().head())
@@ -34,3 +37,6 @@ p.set_model_race(1)
 print(p.get_model_race())
 p.set_model_pole(2)
 print(p.get_model_pole())
+
+p.load_csv("./data/dataF1.csv")
+print(p.get_df().head())
