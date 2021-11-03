@@ -27,6 +27,14 @@ class Predictor:
 	def load_csv(self, path):
 		self.df = pd.read_csv(path)
 
+	def train_race_prediction(self): # train race
+		model = 0
+		self.model_race = model
+
+	def train_pole_prediction(self): # train pole
+		model = 1
+		self.model_pole = model
+
 p = Predictor()
 print(p)
 print(p.get_df().head())
@@ -40,3 +48,8 @@ print(p.get_model_pole())
 
 p.load_csv("./data/dataF1.csv")
 print(p.get_df().head())
+
+d.train_race_prediction()
+print(p.get_model_race())
+d.train_pole_prediction()
+print(p.get_model_pole())
